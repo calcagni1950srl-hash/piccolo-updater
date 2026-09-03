@@ -36,7 +36,7 @@ CATEGORIES = {
 }
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; SmartCampaniaPriceBot/0.3; +personal-research)",
+    "User-Agent": "Mozilla/5.0 (compatible; SmartCampaniaPriceBot/0.4; +personal-research)",
     "Accept-Language": "it-IT,it;q=0.9,en;q=0.7",
 }
 
@@ -122,6 +122,25 @@ def quantity(text: str):
         unit = "lt"
     return value, unit
 
+
+
+def _ambiguous_reversed_multipack_name(text: str) -> bool:
+    """
+    Piccolo sometimes uses catalogue names such as:
+        DUEGI IL PANUOZZO X2 GR 400
+
+    This is not the same syntax as "2 x 50 g".  The X2 is a piece count,
+    while "GR 400" is catalogue text and can disagree with the current
+    selling-card weight.  In this case the live card is preferred when it
+    provides a coherent quantity/price/unit-price trio.
+    """
+    return bool(
+        re.search(
+            r"\bX\s*\d+\s+(?:KG|GR|G|ML|CL|LT|L)\s*\d+(?:[.,]\d+)?\b",
+            text,
+            re.I,
+        )
+    )
 
 def _calculated_unit_price(price: float, qv: float | None, qu: str | None):
     """Return mathematically derived €/kg, €/L or €/piece for fixed packs."""
@@ -248,13 +267,25 @@ def parse_product_block(name: str, text: str, category: str, source_url: str) ->
     # Variable-weight products: trust the card/default-weight metadata instead,
     # otherwise a title such as "... KG 1" could incorrectly force 1 kg.
     if is_variable:
+        # For products sold by weight, the card's selected/default weight is
+        # the quantity actually priced. Example: "PANE GRATTUGIATO KG 1"
+        # is currently sold with a 500 g default at 2,55 €/kg.
         qv, qu = quantity(body)
         if qv is None:
             qv, qu = quantity(name)
     else:
-        qv, qu = quantity(name)
-        if qv is None:
+        # Normal sealed packs: the pack size in the name remains preferred.
+        # Exception: ambiguous catalogue names such as "X2 GR 400".  Here the
+        # live selling card may contain a different current weight; use it
+        # first so the quantity stays coherent with price and €/kg.
+        if _ambiguous_reversed_multipack_name(name):
             qv, qu = quantity(body)
+            if qv is None:
+                qv, qu = quantity(name)
+        else:
+            qv, qu = quantity(name)
+            if qv is None:
+                qv, qu = quantity(body)
 
     # For FIXED packs, cross-check Piccolo's published unit price against the
     # package price and quantity. If the metadata is clearly impossible,
