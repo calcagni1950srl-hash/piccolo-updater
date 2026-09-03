@@ -81,3 +81,46 @@ for x in items:
         "| promo:", x.promo_until,
         "| peso variabile:", x.variable_weight,
     )
+
+
+def test_bad_catalogue_metadata_is_corrected():
+    html = """
+    <div class="card">
+      <h3>Senfter Servelade 200 g</h3>
+      <div>200 kg</div>
+      <div>0,01 € al kg</div>
+      <div>1,99 €</div>
+      <div>1,49€</div>
+      <div>-25%</div>
+      <div>IN OFFERTA fino al 13/09</div>
+      <button>Aggiungi</button>
+    </div>
+    """
+    products = parse_html(html, "salumi", "test")
+    assert len(products) == 1
+    p = products[0]
+    assert p.quantity_value == 200
+    assert p.quantity_unit == "gr"
+    assert p.price_eur == 1.49
+    assert p.unit_price_eur == 7.45
+    assert p.unit_price_unit == "kg"
+    assert p.list_price_eur == 1.99
+    assert p.promo_until == "13/09"
+
+
+def test_multipack_quantity():
+    html = """
+    <div class="card">
+      <h3>Senfter Cubetti di Speck 2 x 50 g</h3>
+      <div>100 gr</div>
+      <div>29,00 € al kg</div>
+      <div>2,90€</div>
+      <button>Aggiungi</button>
+    </div>
+    """
+    products = parse_html(html, "salumi", "test")
+    assert len(products) == 1
+    p = products[0]
+    assert p.quantity_value == 100
+    assert p.quantity_unit == "gr"
+    assert p.unit_price_eur == 29.0
