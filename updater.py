@@ -62,10 +62,32 @@ def _float_it(value: str) -> float:
 
 
 def quantity(text: str):
-    # Prefer the explicit quantity shown in the card.
-    # Accepts 500 gr, 0,5 kg, 1 lt, 6 pz...
+    """
+    Read an explicit product quantity such as:
+      500 gr, 200 g, 0,5 kg, 1 lt, 6 pz, 2 x 50 g.
+
+    Important: when called on the product NAME this is more reliable than
+    Piccolo's card metadata. Some catalogue cards contain obvious metadata
+    mistakes (for example a 200 g product rendered as '200 kg').
+    """
+    # Multipack: "2 x 50 g" -> 100 gr.
+    mm = re.search(
+        r"(?<![\d.,])(\d+)\s*[xX]\s*(\d+(?:[.,]\d+)?)\s*(kg|gr|g|ml|cl|lt|l|pz)\b",
+        text,
+        re.I,
+    )
+    if mm:
+        n = float(mm.group(1))
+        value = _float_it(mm.group(2)) * n
+        unit = mm.group(3).lower()
+        if unit == "g":
+            unit = "gr"
+        elif unit == "l":
+            unit = "lt"
+        return value, unit
+
     m = re.search(
-        r"(?<!\d)(\d+(?:[.,]\d+)?)\s*(kg|gr|g|ml|cl|lt|l|pz)\b",
+        r"(?<![\d.,])(\d+(?:[.,]\d+)?)\s*(kg|gr|g|ml|cl|lt|l|pz)\b",
         text,
         re.I,
     )
@@ -73,7 +95,59 @@ def quantity(text: str):
         return None, None
     value = _float_it(m.group(1))
     unit = m.group(2).lower()
+    if unit == "g":
+        unit = "gr"
+    elif unit == "l":
+        unit = "lt"
     return value, unit
+
+
+def _calculated_unit_price(price: float, qv: float | None, qu: str | None):
+    """Return mathematically derived €/kg, €/L or €/piece for fixed packs."""
+    if not qv or not qu or qv <= 0:
+        return None, None
+
+    qu = qu.lower()
+    if qu == "gr":
+        kg = qv / 1000.0
+        return (round(price / kg, 2), "kg") if kg > 0 else (None, None)
+    if qu == "kg":
+        return round(price / qv, 2), "kg"
+    if qu == "ml":
+        litres = qv / 1000.0
+        return (round(price / litres, 2), "litro") if litres > 0 else (None, None)
+    if qu == "cl":
+        litres = qv / 100.0
+        return (round(price / litres, 2), "litro") if litres > 0 else (None, None)
+    if qu == "lt":
+        return round(price / qv, 2), "litro"
+    if qu == "pz":
+        return round(price / qv, 2), "pezzo"
+    return None, None
+
+
+def _unit_prices_compatible(source_value, source_unit, calc_value, calc_unit) -> bool:
+    if source_value is None or calc_value is None:
+        return False
+
+    su = (source_unit or "").lower()
+    cu = (calc_unit or "").lower()
+
+    kg_units = {"kg"}
+    litre_units = {"litro", "l", "lt"}
+    piece_units = {"pezzo", "pz"}
+
+    same_family = (
+        (su in kg_units and cu in kg_units)
+        or (su in litre_units and cu in litre_units)
+        or (su in piece_units and cu in piece_units)
+    )
+    if not same_family:
+        return False
+
+    # Allow normal rounding differences, but reject impossible catalogue metadata.
+    tolerance = max(0.05, calc_value * 0.08)
+    return abs(source_value - calc_value) <= tolerance
 
 
 def unit_price(text: str):
@@ -146,7 +220,21 @@ def parse_product_block(name: str, text: str, category: str, source_url: str) ->
     if list_price is not None and list_price > 1000:
         list_price = None
 
-    qv, qu = quantity(body)
+    # Prefer quantity embedded in the product name. It is often the most
+    # authoritative description of the fixed package (e.g. "200 g").
+    qv, qu = quantity(name)
+    if qv is None:
+        qv, qu = quantity(body)
+
+    is_variable = 1 if re.search(r"Venduto\s+a\s+Peso|SP\.?\s*(?:AL\s+)?KG", text, re.I) else 0
+
+    # For FIXED packs, cross-check Piccolo's published unit price against the
+    # package price and quantity. If the metadata is clearly impossible,
+    # derive €/kg or €/L mathematically from the real pack price and size.
+    if not is_variable:
+        calc_up, calc_uu = _calculated_unit_price(price, qv, qu)
+        if calc_up is not None and not _unit_prices_compatible(up, uu, calc_up, calc_uu):
+            up, uu = calc_up, calc_uu
 
     discount = None
     if list_price and list_price > price:
@@ -164,7 +252,7 @@ def parse_product_block(name: str, text: str, category: str, source_url: str) ->
         unit_price_unit=uu,
         list_price_eur=list_price,
         discount_pct=discount,
-        variable_weight=1 if re.search(r"Venduto\s+a\s+Peso|SP\.?\s*(?:AL\s+)?KG", text, re.I) else 0,
+        variable_weight=is_variable,
         promo_until=promo_until(text),
         source_url=source_url,
         checked_at=datetime.now(timezone.utc).isoformat(timespec="seconds"),
