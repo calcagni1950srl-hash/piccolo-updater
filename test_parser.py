@@ -67,8 +67,13 @@ assert c.promo_until == "13/09"
 
 d = items[3]
 assert d.price_eur == 2.79
-assert d.unit_price_eur == 0.01
-assert d.unit_price_unit == "pezzo"
+# Il nome prodotto indica 0,240 kg: per una confezione fissa da €2,79
+# il dato "0,01 € al pezzo" della card è incoerente.
+# La v4 deve quindi ricavare 2,79 / 0,240 = 11,62 €/kg.
+assert d.quantity_value == 0.24
+assert d.quantity_unit == "kg"
+assert d.unit_price_eur == 11.62
+assert d.unit_price_unit == "kg"
 
 print("TEST OK")
 for x in items:
@@ -124,3 +129,10 @@ def test_multipack_quantity():
     assert p.quantity_value == 100
     assert p.quantity_unit == "gr"
     assert p.unit_price_eur == 29.0
+
+
+# Esegui esplicitamente anche i test di regressione v4 quando il file
+# viene lanciato direttamente da GitHub Actions con `python test_parser.py`.
+test_bad_catalogue_metadata_is_corrected()
+test_multipack_quantity()
+print("TEST V4 COMPLETI OK")
