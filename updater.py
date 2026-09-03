@@ -14,11 +14,22 @@ STORE_CODE = "8004C"
 DB_PATH = Path(__file__).with_name("prezzi.db")
 
 CATEGORIES = {
+    # Categorie già testate nella v2
     "carne": f"{BASE}/spesa-consegna-domicilio/{STORE_CODE}/carne_5?d=1&s=g&sort=price",
     "pasta": f"{BASE}/spesa-consegna-domicilio/{STORE_CODE}/pasta_195?d=1&s=g&sort=price",
     "legumi": f"{BASE}/spesa-consegna-domicilio/{STORE_CODE}/legumi-secchi_4073?d=1&s=g&sort=price",
     "latte": f"{BASE}/spesa-consegna-domicilio/{STORE_CODE}/latte_159?d=1&s=g&sort=price",
     "verdura": f"{BASE}/spesa-consegna-domicilio/{STORE_CODE}/verdura-fresca-e-ortaggi_139?d=1&s=g&sort=price",
+
+    # Nuove categorie v3
+    "pane": f"{BASE}/spesa-consegna-domicilio/{STORE_CODE}/pane_165?d=1&s=g&sort=price",
+    "formaggi": f"{BASE}/spesa-consegna-domicilio/{STORE_CODE}/formaggi_8?d=1&s=g&sort=price",
+    "uova": f"{BASE}/spesa-consegna-domicilio/{STORE_CODE}/uova_161?d=1&s=g&sort=price",
+    "frutta": f"{BASE}/spesa-consegna-domicilio/{STORE_CODE}/frutta_277?d=1&s=g&sort=price",
+    "salumi": f"{BASE}/spesa-consegna-domicilio/{STORE_CODE}/salumi_9?d=1&s=g&sort=price",
+    "olio": f"{BASE}/spesa-consegna-domicilio/{STORE_CODE}/olio_349?d=1&s=g&sort=price",
+    "pesce_surgelato": f"{BASE}/spesa-consegna-domicilio/{STORE_CODE}/pesce-surgelato_253?d=1&s=g&sort=price",
+    "pesce_scatola": f"{BASE}/spesa-consegna-domicilio/{STORE_CODE}/tonno-e-pesce-in-scatola_209?d=1&s=g&sort=price",
 }
 
 HEADERS = {
