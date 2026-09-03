@@ -21,6 +21,7 @@ CATEGORIES = {
     "condimenti": f"{BASE}/spesa-consegna-domicilio/{STORE_CODE}/condimenti_351?d=1&s=g&sort=price",
     "sughi": f"{BASE}/spesa-consegna-domicilio/{STORE_CODE}/sughi_350?d=1&s=g&sort=price",
     "dolci_dispensa": f"{BASE}/spesa-consegna-domicilio/{STORE_CODE}/dolci_17?d=1&s=g&sort=price",
+    "dispensa_scatolame": f"{BASE}/spesa-consegna-domicilio/{STORE_CODE}/dispensa-e-scatolame_352?d=1&s=g&sort=price",
 
     # Categorie già validate nelle versioni precedenti.
     "carne": f"{BASE}/spesa-consegna-domicilio/{STORE_CODE}/carne_5?d=1&s=g&sort=price",
@@ -35,7 +36,7 @@ CATEGORIES = {
 }
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; SmartCampaniaPriceBot/0.2; +personal-research)",
+    "User-Agent": "Mozilla/5.0 (compatible; SmartCampaniaPriceBot/0.3; +personal-research)",
     "Accept-Language": "it-IT,it;q=0.9,en;q=0.7",
 }
 
@@ -66,11 +67,13 @@ def _float_it(value: str) -> float:
 def quantity(text: str):
     """
     Read an explicit product quantity such as:
-      500 gr, 200 g, 0,5 kg, 1 lt, 6 pz, 2 x 50 g.
+      500 gr, 200 g, 0,5 kg, 1 lt, 6 pz, 2 x 50 g
+    and catalogue-style reversed forms such as:
+      GR 15, KG 1, LT 1.
 
-    Important: when called on the product NAME this is more reliable than
-    Piccolo's card metadata. Some catalogue cards contain obvious metadata
-    mistakes (for example a 200 g product rendered as '200 kg').
+    When used on a fixed-pack product NAME this is more reliable than
+    Piccolo's card metadata. For variable-weight products the parser instead
+    trusts the card metadata/default weight.
     """
     # Multipack: "2 x 50 g" -> 100 gr.
     mm = re.search(
@@ -88,15 +91,31 @@ def quantity(text: str):
             unit = "lt"
         return value, unit
 
+    # Standard order: "15 gr", "1 kg".
     m = re.search(
         r"(?<![\d.,])(\d+(?:[.,]\d+)?)\s*(kg|gr|g|ml|cl|lt|l|pz)\b",
         text,
         re.I,
     )
+    if m:
+        value = _float_it(m.group(1))
+        unit = m.group(2).lower()
+        if unit == "g":
+            unit = "gr"
+        elif unit == "l":
+            unit = "lt"
+        return value, unit
+
+    # Piccolo names often use reversed order: "ORIGANO GR 15", "OLIO LT 1".
+    m = re.search(
+        r"\b(kg|gr|g|ml|cl|lt|l|pz)\s*(\d+(?:[.,]\d+)?)\b",
+        text,
+        re.I,
+    )
     if not m:
         return None, None
-    value = _float_it(m.group(1))
-    unit = m.group(2).lower()
+    unit = m.group(1).lower()
+    value = _float_it(m.group(2))
     if unit == "g":
         unit = "gr"
     elif unit == "l":
@@ -222,13 +241,20 @@ def parse_product_block(name: str, text: str, category: str, source_url: str) ->
     if list_price is not None and list_price > 1000:
         list_price = None
 
-    # Prefer quantity embedded in the product name. It is often the most
-    # authoritative description of the fixed package (e.g. "200 g").
-    qv, qu = quantity(name)
-    if qv is None:
-        qv, qu = quantity(body)
-
     is_variable = 1 if re.search(r"Venduto\s+a\s+Peso|SP\.?\s*(?:AL\s+)?KG", text, re.I) else 0
+
+    # Fixed packs: prefer the quantity written in the product name, including
+    # Piccolo's reversed style "GR 15" / "KG 1".
+    # Variable-weight products: trust the card/default-weight metadata instead,
+    # otherwise a title such as "... KG 1" could incorrectly force 1 kg.
+    if is_variable:
+        qv, qu = quantity(body)
+        if qv is None:
+            qv, qu = quantity(name)
+    else:
+        qv, qu = quantity(name)
+        if qv is None:
+            qv, qu = quantity(body)
 
     # For FIXED packs, cross-check Piccolo's published unit price against the
     # package price and quantity. If the metadata is clearly impossible,
