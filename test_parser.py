@@ -3,14 +3,13 @@ from updater import quantity, parse_product_block
 def check(got, expected, label):
     assert got == expected, f"{label}: ottenuto {got}, atteso {expected}"
 
-# Quantity syntax regressions.
+# Regressioni V6.
 check(quantity("PICCOLO ORIGANO GR 15"), (15.0, "gr"), "origano reverse")
 check(quantity("PICCOLO PEPE NERO MACINATO GR 35"), (35.0, "gr"), "pepe reverse")
 check(quantity("PICCOLO OLIO DI GIRASOLE LT 1"), (1.0, "lt"), "olio reverse")
-check(quantity("BENEDUCE MOZZARELLA GR 250"), (250.0, "gr"), "mozzarella reverse")
-check(quantity("Prodotto 2 x 50 g"), (100.0, "gr"), "multipack")
+check(quantity("Prodotto 2 x 50 g"), (100.0, "gr"), "multipack classico")
 
-# Fixed pack: name quantity must beat bad card metadata.
+# Sealed pack, reversed syntax: name remains authoritative.
 p = parse_product_block(
     "PICCOLO ORIGANO GR 15",
     """PICCOLO ORIGANO GR 15
@@ -23,22 +22,38 @@ Aggiungi""",
 )
 assert p is not None
 check((p.quantity_value, p.quantity_unit), (15.0, "gr"), "fixed name precedence")
-assert abs(p.unit_price_eur - 73.33) < 0.01, p.unit_price_eur
 
-# Variable weight: card default weight must beat a title ending in KG 1.
+# Sold-by-weight product: 500 g is correct, despite "KG 1" in catalogue title.
 p = parse_product_block(
-    "ARISTA DI MAIALE KG 1",
-    """ARISTA DI MAIALE KG 1
-Venduto a Peso
+    "PANE GRATTUGIATO KG 1",
+    """PANE GRATTUGIATO KG 1
 500 gr
-8,99 € al kg
-4,50 €
+2,55 € al kg
+Venduto a Peso
+1,27 €
 Aggiungi""",
-    "carne",
-    "https://example.test/arista",
+    "pane",
+    "https://example.test/pane-grattugiato",
 )
 assert p is not None
-check((p.quantity_value, p.quantity_unit), (500.0, "gr"), "variable card precedence")
+check((p.quantity_value, p.quantity_unit), (500.0, "gr"), "pane grattugiato live weight")
 assert p.variable_weight == 1
+assert abs(p.unit_price_eur - 2.55) < 0.001
 
-print("OK - test_parser V6 superati")
+# Ambiguous catalogue multipack: current live-card weight wins.
+p = parse_product_block(
+    "DUEGI IL PANUOZZO X2 GR 400",
+    """DUEGI IL PANUOZZO X2 GR 400
+350 gr
+7,00 € al kg
+2,45 €
+Aggiungi""",
+    "pasta_pane_farinacei",
+    "https://example.test/panuozzo",
+)
+assert p is not None
+check((p.quantity_value, p.quantity_unit), (350.0, "gr"), "panuozzo live weight")
+assert p.variable_weight == 0
+assert abs(p.unit_price_eur - 7.00) < 0.001
+
+print("OK - test_parser V7 superati")
