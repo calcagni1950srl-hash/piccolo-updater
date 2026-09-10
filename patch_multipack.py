@@ -13,16 +13,14 @@ if 'Reversed multipack used by Piccolo catalogue names' not in src:
     src = src.replace(marker, patch + marker, 1)
     UPDATER.write_text(src, encoding='utf-8')
 
-# Aggiunge test di regressione reali/idonei solo se non già presenti.
+# Aggiunge test di regressione solo se non già presenti.
 t = TESTS.read_text(encoding='utf-8')
 reg = '''\n# Regressione multipack Piccolo: ordine UNITA QUANTITA X PEZZI\nassert quantity("MARRANDINO MOZZARELLA BUFALA GR 100 X 5") == (500.0, "gr")\nassert quantity("LA PERLA MOZZARELLA DI BUFALA GR 125 X 2") == (250.0, "gr")\n'''
 if 'MARRANDINO MOZZARELLA BUFALA GR 100 X 5' not in t:
     t += reg
     TESTS.write_text(t, encoding='utf-8')
 
-# Verifica immediata della funzione appena patchata.
-ns = {}
-exec(compile(UPDATER.read_text(encoding='utf-8'), 'updater.py', 'exec'), ns)
-assert ns['quantity']('MARRANDINO MOZZARELLA BUFALA GR 100 X 5') == (500.0, 'gr')
-assert ns['quantity']('LA PERLA MOZZARELLA DI BUFALA GR 125 X 2') == (250.0, 'gr')
-print('Patch multipack V8 applicata e verificata')
+# Controllo sintattico senza importare dipendenze esterne.
+compile(UPDATER.read_text(encoding='utf-8'), 'updater.py', 'exec')
+compile(TESTS.read_text(encoding='utf-8'), 'test_parser.py', 'exec')
+print('Patch multipack V8 applicata; sintassi valida')
