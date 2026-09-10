@@ -98,3 +98,7 @@ check(arch, [("A", "NON_PIU_PRESENTE_NELLO_SNAPSHOT_CATEGORIA")], "stale archive
 check(c.execute("select count(*) from products_certified").fetchone()[0], 2, "certified view")
 
 print("OK - test_parser V8 superati")
+
+# Regressione multipack Piccolo: ordine UNITA QUANTITA X PEZZI
+assert quantity("MARRANDINO MOZZARELLA BUFALA GR 100 X 5") == (500.0, "gr")
+assert quantity("LA PERLA MOZZARELLA DI BUFALA GR 125 X 2") == (250.0, "gr")

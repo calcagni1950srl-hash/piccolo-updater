@@ -94,6 +94,22 @@ def quantity(text: str):
             unit = "lt"
         return value, unit
 
+    # Reversed multipack used by Piccolo catalogue names:
+    # "GR 100 X 5" -> 500 gr, "GR 125 X 2" -> 250 gr.
+    mm = re.search(
+        r"\b(kg|gr|g|ml|cl|lt|l|pz)\s*(\d+(?:[.,]\d+)?)\s*[xX]\s*(\d+)\b",
+        text,
+        re.I,
+    )
+    if mm:
+        unit = mm.group(1).lower()
+        value = _float_it(mm.group(2)) * float(mm.group(3))
+        if unit == "g":
+            unit = "gr"
+        elif unit == "l":
+            unit = "lt"
+        return value, unit
+
     # Standard order: "15 gr", "1 kg".
     m = re.search(
         r"(?<![\d.,])(\d+(?:[.,]\d+)?)\s*(kg|gr|g|ml|cl|lt|l|pz)\b",

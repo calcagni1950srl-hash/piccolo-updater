@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T17:18:31+00:00",
+  "generated_at": "2026-09-10T17:36:28+00:00",
   "db": "prezzi.db",
   "total_current_rows": 3846,
   "by_category": {
@@ -51,11 +51,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/sughi_350?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:09+00:00",
+        "checked_at": "2026-09-10T17:36:11+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:09+00:00"
+        "last_seen_at": "2026-09-10T17:36:11+00:00"
       },
       {
         "category": "formaggi",
@@ -68,11 +68,11 @@
         "variable_weight": 0,
         "promo_until": "13/09",
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/formaggi_8?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:22+00:00",
+        "checked_at": "2026-09-10T17:36:22+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:22+00:00"
+        "last_seen_at": "2026-09-10T17:36:22+00:00"
       },
       {
         "category": "formaggi",
@@ -85,11 +85,11 @@
         "variable_weight": 0,
         "promo_until": "13/09",
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/formaggi_8?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:22+00:00",
+        "checked_at": "2026-09-10T17:36:22+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:22+00:00"
+        "last_seen_at": "2026-09-10T17:36:22+00:00"
       },
       {
         "category": "formaggi",
@@ -102,11 +102,11 @@
         "variable_weight": 0,
         "promo_until": "13/09",
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/formaggi_8?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:22+00:00",
+        "checked_at": "2026-09-10T17:36:22+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:22+00:00"
+        "last_seen_at": "2026-09-10T17:36:22+00:00"
       },
       {
         "category": "verdura_legumi_cereali",
@@ -119,11 +119,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/verdura-legumi-e-cereali_7?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:01+00:00",
+        "checked_at": "2026-09-10T17:36:05+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:01+00:00"
+        "last_seen_at": "2026-09-10T17:36:05+00:00"
       },
       {
         "category": "formaggi",
@@ -136,11 +136,11 @@
         "variable_weight": 0,
         "promo_until": "13/09",
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/formaggi_8?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:22+00:00",
+        "checked_at": "2026-09-10T17:36:22+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:22+00:00"
+        "last_seen_at": "2026-09-10T17:36:22+00:00"
       },
       {
         "category": "formaggi",
@@ -153,11 +153,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/formaggi_8?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:22+00:00",
+        "checked_at": "2026-09-10T17:36:22+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:22+00:00"
+        "last_seen_at": "2026-09-10T17:36:22+00:00"
       },
       {
         "category": "formaggi",
@@ -170,11 +170,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/formaggi_8?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:22+00:00",
+        "checked_at": "2026-09-10T17:36:22+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:22+00:00"
+        "last_seen_at": "2026-09-10T17:36:22+00:00"
       },
       {
         "category": "formaggi",
@@ -187,11 +187,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/formaggi_8?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:22+00:00",
+        "checked_at": "2026-09-10T17:36:22+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:22+00:00"
+        "last_seen_at": "2026-09-10T17:36:22+00:00"
       },
       {
         "category": "formaggi",
@@ -204,28 +204,28 @@
         "variable_weight": 1,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/formaggi_8?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:22+00:00",
+        "checked_at": "2026-09-10T17:36:22+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:22+00:00"
+        "last_seen_at": "2026-09-10T17:36:22+00:00"
       },
       {
         "category": "formaggi",
         "name": "LA PERLA MOZZARELLA DI BUFALA GR 125 X 2",
-        "quantity_value": 125.0,
+        "quantity_value": 250.0,
         "quantity_unit": "gr",
         "price_eur": 3.2,
-        "unit_price_eur": 25.6,
+        "unit_price_eur": 12.8,
         "unit_price_unit": "kg",
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/formaggi_8?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:22+00:00",
+        "checked_at": "2026-09-10T17:36:22+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:22+00:00"
+        "last_seen_at": "2026-09-10T17:36:22+00:00"
       },
       {
         "category": "formaggi",
@@ -238,28 +238,28 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/formaggi_8?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:22+00:00",
+        "checked_at": "2026-09-10T17:36:22+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:22+00:00"
+        "last_seen_at": "2026-09-10T17:36:22+00:00"
       },
       {
         "category": "formaggi",
         "name": "MARRANDINO MOZZARELLA BUFALA GR 100 X 5",
-        "quantity_value": 100.0,
+        "quantity_value": 500.0,
         "quantity_unit": "gr",
         "price_eur": 6.4,
-        "unit_price_eur": 64.0,
+        "unit_price_eur": 12.8,
         "unit_price_unit": "kg",
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/formaggi_8?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:22+00:00",
+        "checked_at": "2026-09-10T17:36:22+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:22+00:00"
+        "last_seen_at": "2026-09-10T17:36:22+00:00"
       },
       {
         "category": "pesce_surgelato",
@@ -272,11 +272,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/pesce-surgelato_253?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:30+00:00",
+        "checked_at": "2026-09-10T17:36:26+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:30+00:00"
+        "last_seen_at": "2026-09-10T17:36:26+00:00"
       },
       {
         "category": "formaggi",
@@ -289,11 +289,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/formaggi_8?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:22+00:00",
+        "checked_at": "2026-09-10T17:36:22+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:22+00:00"
+        "last_seen_at": "2026-09-10T17:36:22+00:00"
       }
     ],
     "pane": [
@@ -308,11 +308,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "pasta_pane_farinacei",
@@ -325,11 +325,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/pasta-pane-e-farinacei_12?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:06+00:00",
+        "checked_at": "2026-09-10T17:36:08+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:06+00:00"
+        "last_seen_at": "2026-09-10T17:36:08+00:00"
       },
       {
         "category": "pasta_pane_farinacei",
@@ -342,11 +342,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/pasta-pane-e-farinacei_12?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:06+00:00",
+        "checked_at": "2026-09-10T17:36:08+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:06+00:00"
+        "last_seen_at": "2026-09-10T17:36:08+00:00"
       },
       {
         "category": "pane",
@@ -376,11 +376,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/pasta-pane-e-farinacei_12?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:06+00:00",
+        "checked_at": "2026-09-10T17:36:08+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:06+00:00"
+        "last_seen_at": "2026-09-10T17:36:08+00:00"
       },
       {
         "category": "pane",
@@ -410,11 +410,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/pasta-pane-e-farinacei_12?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:06+00:00",
+        "checked_at": "2026-09-10T17:36:08+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:06+00:00"
+        "last_seen_at": "2026-09-10T17:36:08+00:00"
       },
       {
         "category": "pane",
@@ -444,11 +444,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/pasta-pane-e-farinacei_12?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:06+00:00",
+        "checked_at": "2026-09-10T17:36:08+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:06+00:00"
+        "last_seen_at": "2026-09-10T17:36:08+00:00"
       },
       {
         "category": "pasta_pane_farinacei",
@@ -461,11 +461,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/pasta-pane-e-farinacei_12?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:06+00:00",
+        "checked_at": "2026-09-10T17:36:08+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:06+00:00"
+        "last_seen_at": "2026-09-10T17:36:08+00:00"
       },
       {
         "category": "pane",
@@ -495,11 +495,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/pasta-pane-e-farinacei_12?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:06+00:00",
+        "checked_at": "2026-09-10T17:36:08+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:06+00:00"
+        "last_seen_at": "2026-09-10T17:36:08+00:00"
       },
       {
         "category": "formaggi",
@@ -512,11 +512,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/formaggi_8?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:22+00:00",
+        "checked_at": "2026-09-10T17:36:22+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:22+00:00"
+        "last_seen_at": "2026-09-10T17:36:22+00:00"
       },
       {
         "category": "pane",
@@ -546,11 +546,11 @@
         "variable_weight": 1,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/pasta-pane-e-farinacei_12?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:06+00:00",
+        "checked_at": "2026-09-10T17:36:08+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:06+00:00"
+        "last_seen_at": "2026-09-10T17:36:08+00:00"
       },
       {
         "category": "pane",
@@ -580,11 +580,11 @@
         "variable_weight": 1,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/pasta-pane-e-farinacei_12?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:06+00:00",
+        "checked_at": "2026-09-10T17:36:08+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:06+00:00"
+        "last_seen_at": "2026-09-10T17:36:08+00:00"
       },
       {
         "category": "pane",
@@ -614,11 +614,11 @@
         "variable_weight": 1,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/pasta-pane-e-farinacei_12?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:06+00:00",
+        "checked_at": "2026-09-10T17:36:08+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:06+00:00"
+        "last_seen_at": "2026-09-10T17:36:08+00:00"
       },
       {
         "category": "pane",
@@ -648,11 +648,11 @@
         "variable_weight": 1,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/pasta-pane-e-farinacei_12?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:06+00:00",
+        "checked_at": "2026-09-10T17:36:08+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:06+00:00"
+        "last_seen_at": "2026-09-10T17:36:08+00:00"
       },
       {
         "category": "pane",
@@ -682,11 +682,11 @@
         "variable_weight": 1,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/pasta-pane-e-farinacei_12?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:06+00:00",
+        "checked_at": "2026-09-10T17:36:08+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:06+00:00"
+        "last_seen_at": "2026-09-10T17:36:08+00:00"
       },
       {
         "category": "pane",
@@ -716,11 +716,11 @@
         "variable_weight": 1,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/pasta-pane-e-farinacei_12?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:06+00:00",
+        "checked_at": "2026-09-10T17:36:08+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:06+00:00"
+        "last_seen_at": "2026-09-10T17:36:08+00:00"
       },
       {
         "category": "pane",
@@ -750,11 +750,11 @@
         "variable_weight": 1,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/pasta-pane-e-farinacei_12?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:06+00:00",
+        "checked_at": "2026-09-10T17:36:08+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:06+00:00"
+        "last_seen_at": "2026-09-10T17:36:08+00:00"
       },
       {
         "category": "pane",
@@ -784,11 +784,11 @@
         "variable_weight": 1,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/pasta-pane-e-farinacei_12?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:06+00:00",
+        "checked_at": "2026-09-10T17:36:08+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:06+00:00"
+        "last_seen_at": "2026-09-10T17:36:08+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -801,11 +801,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -818,11 +818,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -835,11 +835,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -852,11 +852,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -869,11 +869,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -886,11 +886,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -903,11 +903,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -920,11 +920,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -937,11 +937,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -954,11 +954,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -971,11 +971,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -988,11 +988,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -1005,11 +1005,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -1022,11 +1022,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -1039,11 +1039,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -1056,11 +1056,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -1073,11 +1073,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -1090,11 +1090,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -1107,11 +1107,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -1124,11 +1124,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -1141,11 +1141,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       }
     ],
     "zucchine": [
@@ -1177,11 +1177,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/verdura-legumi-e-cereali_7?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:01+00:00",
+        "checked_at": "2026-09-10T17:36:05+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:01+00:00"
+        "last_seen_at": "2026-09-10T17:36:05+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -1194,11 +1194,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "pesce_scatola",
@@ -1211,11 +1211,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/tonno-e-pesce-in-scatola_209?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:31+00:00",
+        "checked_at": "2026-09-10T17:36:28+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:31+00:00"
+        "last_seen_at": "2026-09-10T17:36:28+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -1228,11 +1228,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "verdura",
@@ -1262,11 +1262,11 @@
         "variable_weight": 1,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/verdura-legumi-e-cereali_7?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:01+00:00",
+        "checked_at": "2026-09-10T17:36:05+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:01+00:00"
+        "last_seen_at": "2026-09-10T17:36:05+00:00"
       },
       {
         "category": "verdura",
@@ -1296,11 +1296,11 @@
         "variable_weight": 1,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/verdura-legumi-e-cereali_7?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:01+00:00",
+        "checked_at": "2026-09-10T17:36:05+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:01+00:00"
+        "last_seen_at": "2026-09-10T17:36:05+00:00"
       },
       {
         "category": "verdura",
@@ -1330,11 +1330,11 @@
         "variable_weight": 1,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/verdura-legumi-e-cereali_7?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:01+00:00",
+        "checked_at": "2026-09-10T17:36:05+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:01+00:00"
+        "last_seen_at": "2026-09-10T17:36:05+00:00"
       },
       {
         "category": "verdura",
@@ -1364,11 +1364,11 @@
         "variable_weight": 1,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/verdura-legumi-e-cereali_7?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:01+00:00",
+        "checked_at": "2026-09-10T17:36:05+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:01+00:00"
+        "last_seen_at": "2026-09-10T17:36:05+00:00"
       }
     ],
     "cipolla": [
@@ -1383,11 +1383,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/condimenti_351?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:08+00:00",
+        "checked_at": "2026-09-10T17:36:09+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:08+00:00"
+        "last_seen_at": "2026-09-10T17:36:09+00:00"
       },
       {
         "category": "verdura",
@@ -1417,11 +1417,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/verdura-legumi-e-cereali_7?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:01+00:00",
+        "checked_at": "2026-09-10T17:36:05+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:01+00:00"
+        "last_seen_at": "2026-09-10T17:36:05+00:00"
       },
       {
         "category": "verdura",
@@ -1451,11 +1451,11 @@
         "variable_weight": 1,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/verdura-legumi-e-cereali_7?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:01+00:00",
+        "checked_at": "2026-09-10T17:36:05+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:01+00:00"
+        "last_seen_at": "2026-09-10T17:36:05+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -1468,11 +1468,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "verdura",
@@ -1502,11 +1502,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/verdura-legumi-e-cereali_7?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:01+00:00",
+        "checked_at": "2026-09-10T17:36:05+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:01+00:00"
+        "last_seen_at": "2026-09-10T17:36:05+00:00"
       },
       {
         "category": "condimenti",
@@ -1519,11 +1519,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/condimenti_351?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:08+00:00",
+        "checked_at": "2026-09-10T17:36:09+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:08+00:00"
+        "last_seen_at": "2026-09-10T17:36:09+00:00"
       },
       {
         "category": "condimenti",
@@ -1536,11 +1536,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/condimenti_351?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:08+00:00",
+        "checked_at": "2026-09-10T17:36:09+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:08+00:00"
+        "last_seen_at": "2026-09-10T17:36:09+00:00"
       },
       {
         "category": "condimenti",
@@ -1553,11 +1553,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/condimenti_351?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:08+00:00",
+        "checked_at": "2026-09-10T17:36:09+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:08+00:00"
+        "last_seen_at": "2026-09-10T17:36:09+00:00"
       },
       {
         "category": "verdura",
@@ -1587,11 +1587,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/verdura-legumi-e-cereali_7?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:01+00:00",
+        "checked_at": "2026-09-10T17:36:05+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:01+00:00"
+        "last_seen_at": "2026-09-10T17:36:05+00:00"
       },
       {
         "category": "verdura",
@@ -1621,11 +1621,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/verdura-legumi-e-cereali_7?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:01+00:00",
+        "checked_at": "2026-09-10T17:36:05+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:01+00:00"
+        "last_seen_at": "2026-09-10T17:36:05+00:00"
       },
       {
         "category": "verdura",
@@ -1655,11 +1655,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/verdura-legumi-e-cereali_7?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:01+00:00",
+        "checked_at": "2026-09-10T17:36:05+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:01+00:00"
+        "last_seen_at": "2026-09-10T17:36:05+00:00"
       },
       {
         "category": "condimenti",
@@ -1672,11 +1672,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/condimenti_351?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:08+00:00",
+        "checked_at": "2026-09-10T17:36:09+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:08+00:00"
+        "last_seen_at": "2026-09-10T17:36:09+00:00"
       },
       {
         "category": "verdura",
@@ -1706,11 +1706,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/verdura-legumi-e-cereali_7?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:01+00:00",
+        "checked_at": "2026-09-10T17:36:05+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:01+00:00"
+        "last_seen_at": "2026-09-10T17:36:05+00:00"
       },
       {
         "category": "condimenti",
@@ -1723,11 +1723,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/condimenti_351?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:08+00:00",
+        "checked_at": "2026-09-10T17:36:09+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:08+00:00"
+        "last_seen_at": "2026-09-10T17:36:09+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -1740,11 +1740,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "pasta_pane_farinacei",
@@ -1757,11 +1757,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/pasta-pane-e-farinacei_12?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:06+00:00",
+        "checked_at": "2026-09-10T17:36:08+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:06+00:00"
+        "last_seen_at": "2026-09-10T17:36:08+00:00"
       }
     ],
     "olio_frittura": [
@@ -1776,11 +1776,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/olio_349?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:29+00:00",
+        "checked_at": "2026-09-10T17:36:25+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:29+00:00"
+        "last_seen_at": "2026-09-10T17:36:25+00:00"
       },
       {
         "category": "olio",
@@ -1793,11 +1793,11 @@
         "variable_weight": 0,
         "promo_until": "13/09",
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/olio_349?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:29+00:00",
+        "checked_at": "2026-09-10T17:36:25+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": 8.5,
-        "last_seen_at": "2026-09-10T17:18:29+00:00"
+        "last_seen_at": "2026-09-10T17:36:25+00:00"
       },
       {
         "category": "pesce_scatola",
@@ -1810,11 +1810,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/tonno-e-pesce-in-scatola_209?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:31+00:00",
+        "checked_at": "2026-09-10T17:36:28+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:31+00:00"
+        "last_seen_at": "2026-09-10T17:36:28+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -1827,11 +1827,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "pesce_scatola",
@@ -1844,11 +1844,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/tonno-e-pesce-in-scatola_209?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:31+00:00",
+        "checked_at": "2026-09-10T17:36:28+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:31+00:00"
+        "last_seen_at": "2026-09-10T17:36:28+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -1861,11 +1861,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "pesce_scatola",
@@ -1878,11 +1878,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/tonno-e-pesce-in-scatola_209?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:31+00:00",
+        "checked_at": "2026-09-10T17:36:28+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:31+00:00"
+        "last_seen_at": "2026-09-10T17:36:28+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -1895,11 +1895,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "pesce_scatola",
@@ -1912,11 +1912,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/tonno-e-pesce-in-scatola_209?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:31+00:00",
+        "checked_at": "2026-09-10T17:36:28+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:31+00:00"
+        "last_seen_at": "2026-09-10T17:36:28+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -1929,11 +1929,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "pesce_scatola",
@@ -1946,11 +1946,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/tonno-e-pesce-in-scatola_209?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:31+00:00",
+        "checked_at": "2026-09-10T17:36:28+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:31+00:00"
+        "last_seen_at": "2026-09-10T17:36:28+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -1963,11 +1963,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "pesce_scatola",
@@ -1980,11 +1980,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/tonno-e-pesce-in-scatola_209?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:31+00:00",
+        "checked_at": "2026-09-10T17:36:28+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:31+00:00"
+        "last_seen_at": "2026-09-10T17:36:28+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -1997,11 +1997,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "pesce_scatola",
@@ -2014,11 +2014,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/tonno-e-pesce-in-scatola_209?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:31+00:00",
+        "checked_at": "2026-09-10T17:36:28+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:31+00:00"
+        "last_seen_at": "2026-09-10T17:36:28+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -2031,11 +2031,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "olio",
@@ -2048,11 +2048,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/olio_349?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:29+00:00",
+        "checked_at": "2026-09-10T17:36:25+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:29+00:00"
+        "last_seen_at": "2026-09-10T17:36:25+00:00"
       },
       {
         "category": "olio",
@@ -2065,11 +2065,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/olio_349?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:29+00:00",
+        "checked_at": "2026-09-10T17:36:25+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:29+00:00"
+        "last_seen_at": "2026-09-10T17:36:25+00:00"
       },
       {
         "category": "pesce_scatola",
@@ -2082,11 +2082,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/tonno-e-pesce-in-scatola_209?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:31+00:00",
+        "checked_at": "2026-09-10T17:36:28+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:31+00:00"
+        "last_seen_at": "2026-09-10T17:36:28+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -2099,11 +2099,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "pesce_scatola",
@@ -2116,11 +2116,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/tonno-e-pesce-in-scatola_209?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:31+00:00",
+        "checked_at": "2026-09-10T17:36:28+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:31+00:00"
+        "last_seen_at": "2026-09-10T17:36:28+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -2133,11 +2133,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "pesce_scatola",
@@ -2150,11 +2150,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/tonno-e-pesce-in-scatola_209?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:31+00:00",
+        "checked_at": "2026-09-10T17:36:28+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:31+00:00"
+        "last_seen_at": "2026-09-10T17:36:28+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -2167,11 +2167,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "olio",
@@ -2184,11 +2184,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/olio_349?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:29+00:00",
+        "checked_at": "2026-09-10T17:36:25+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:29+00:00"
+        "last_seen_at": "2026-09-10T17:36:25+00:00"
       },
       {
         "category": "olio",
@@ -2201,11 +2201,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/olio_349?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:29+00:00",
+        "checked_at": "2026-09-10T17:36:25+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:29+00:00"
+        "last_seen_at": "2026-09-10T17:36:25+00:00"
       },
       {
         "category": "olio",
@@ -2218,11 +2218,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/olio_349?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:29+00:00",
+        "checked_at": "2026-09-10T17:36:25+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:29+00:00"
+        "last_seen_at": "2026-09-10T17:36:25+00:00"
       },
       {
         "category": "olio",
@@ -2235,11 +2235,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/olio_349?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:29+00:00",
+        "checked_at": "2026-09-10T17:36:25+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:29+00:00"
+        "last_seen_at": "2026-09-10T17:36:25+00:00"
       },
       {
         "category": "pesce_scatola",
@@ -2252,11 +2252,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/tonno-e-pesce-in-scatola_209?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:31+00:00",
+        "checked_at": "2026-09-10T17:36:28+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:31+00:00"
+        "last_seen_at": "2026-09-10T17:36:28+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -2269,11 +2269,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "pesce_scatola",
@@ -2286,11 +2286,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/tonno-e-pesce-in-scatola_209?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:31+00:00",
+        "checked_at": "2026-09-10T17:36:28+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:31+00:00"
+        "last_seen_at": "2026-09-10T17:36:28+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -2303,11 +2303,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "olio",
@@ -2320,11 +2320,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/olio_349?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:29+00:00",
+        "checked_at": "2026-09-10T17:36:25+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:29+00:00"
+        "last_seen_at": "2026-09-10T17:36:25+00:00"
       },
       {
         "category": "olio",
@@ -2337,11 +2337,11 @@
         "variable_weight": 0,
         "promo_until": "13/09",
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/olio_349?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:29+00:00",
+        "checked_at": "2026-09-10T17:36:25+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": 6.5,
-        "last_seen_at": "2026-09-10T17:18:29+00:00"
+        "last_seen_at": "2026-09-10T17:36:25+00:00"
       },
       {
         "category": "olio",
@@ -2354,11 +2354,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/olio_349?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:29+00:00",
+        "checked_at": "2026-09-10T17:36:25+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:29+00:00"
+        "last_seen_at": "2026-09-10T17:36:25+00:00"
       },
       {
         "category": "dolci_dispensa",
@@ -2371,11 +2371,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dolci_17?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:11+00:00",
+        "checked_at": "2026-09-10T17:36:14+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:11+00:00"
+        "last_seen_at": "2026-09-10T17:36:14+00:00"
       },
       {
         "category": "dolci_dispensa",
@@ -2388,11 +2388,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dolci_17?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:11+00:00",
+        "checked_at": "2026-09-10T17:36:14+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:11+00:00"
+        "last_seen_at": "2026-09-10T17:36:14+00:00"
       },
       {
         "category": "olio",
@@ -2405,11 +2405,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/olio_349?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:29+00:00",
+        "checked_at": "2026-09-10T17:36:25+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:29+00:00"
+        "last_seen_at": "2026-09-10T17:36:25+00:00"
       },
       {
         "category": "olio",
@@ -2422,11 +2422,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/olio_349?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:29+00:00",
+        "checked_at": "2026-09-10T17:36:25+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:29+00:00"
+        "last_seen_at": "2026-09-10T17:36:25+00:00"
       },
       {
         "category": "olio",
@@ -2439,11 +2439,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/olio_349?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:29+00:00",
+        "checked_at": "2026-09-10T17:36:25+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:29+00:00"
+        "last_seen_at": "2026-09-10T17:36:25+00:00"
       },
       {
         "category": "olio",
@@ -2456,11 +2456,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/olio_349?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:29+00:00",
+        "checked_at": "2026-09-10T17:36:25+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:29+00:00"
+        "last_seen_at": "2026-09-10T17:36:25+00:00"
       },
       {
         "category": "pesce_scatola",
@@ -2473,11 +2473,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/tonno-e-pesce-in-scatola_209?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:31+00:00",
+        "checked_at": "2026-09-10T17:36:28+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:31+00:00"
+        "last_seen_at": "2026-09-10T17:36:28+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -2490,11 +2490,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "pesce_scatola",
@@ -2507,11 +2507,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/tonno-e-pesce-in-scatola_209?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:31+00:00",
+        "checked_at": "2026-09-10T17:36:28+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:31+00:00"
+        "last_seen_at": "2026-09-10T17:36:28+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -2524,11 +2524,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "pesce_scatola",
@@ -2541,11 +2541,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/tonno-e-pesce-in-scatola_209?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:31+00:00",
+        "checked_at": "2026-09-10T17:36:28+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:31+00:00"
+        "last_seen_at": "2026-09-10T17:36:28+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -2558,11 +2558,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "pesce_scatola",
@@ -2575,11 +2575,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/tonno-e-pesce-in-scatola_209?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:31+00:00",
+        "checked_at": "2026-09-10T17:36:28+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:31+00:00"
+        "last_seen_at": "2026-09-10T17:36:28+00:00"
       },
       {
         "category": "dispensa_scatolame",
@@ -2592,11 +2592,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "olio",
@@ -2609,11 +2609,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/olio_349?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:29+00:00",
+        "checked_at": "2026-09-10T17:36:25+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:29+00:00"
+        "last_seen_at": "2026-09-10T17:36:25+00:00"
       }
     ],
     "pere_frutta": [
@@ -2628,11 +2628,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dispensa-e-scatolame_352?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:16+00:00",
+        "checked_at": "2026-09-10T17:36:17+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:16+00:00"
+        "last_seen_at": "2026-09-10T17:36:17+00:00"
       },
       {
         "category": "frutta",
@@ -2645,11 +2645,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/frutta_277?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:25+00:00",
+        "checked_at": "2026-09-10T17:36:24+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:25+00:00"
+        "last_seen_at": "2026-09-10T17:36:24+00:00"
       },
       {
         "category": "frutta",
@@ -2662,11 +2662,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/frutta_277?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:25+00:00",
+        "checked_at": "2026-09-10T17:36:24+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:25+00:00"
+        "last_seen_at": "2026-09-10T17:36:24+00:00"
       },
       {
         "category": "frutta",
@@ -2679,11 +2679,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/frutta_277?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:25+00:00",
+        "checked_at": "2026-09-10T17:36:24+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:25+00:00"
+        "last_seen_at": "2026-09-10T17:36:24+00:00"
       },
       {
         "category": "latte",
@@ -2696,11 +2696,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/latte_159?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:20+00:00",
+        "checked_at": "2026-09-10T17:36:20+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:20+00:00"
+        "last_seen_at": "2026-09-10T17:36:20+00:00"
       },
       {
         "category": "latte",
@@ -2713,11 +2713,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/latte_159?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:20+00:00",
+        "checked_at": "2026-09-10T17:36:20+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:20+00:00"
+        "last_seen_at": "2026-09-10T17:36:20+00:00"
       },
       {
         "category": "uova",
@@ -2730,11 +2730,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/uova_161?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:24+00:00",
+        "checked_at": "2026-09-10T17:36:22+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:24+00:00"
+        "last_seen_at": "2026-09-10T17:36:22+00:00"
       },
       {
         "category": "formaggi",
@@ -2747,11 +2747,11 @@
         "variable_weight": 0,
         "promo_until": "13/09",
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/formaggi_8?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:22+00:00",
+        "checked_at": "2026-09-10T17:36:22+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:22+00:00"
+        "last_seen_at": "2026-09-10T17:36:22+00:00"
       },
       {
         "category": "formaggi",
@@ -2764,11 +2764,11 @@
         "variable_weight": 0,
         "promo_until": "13/09",
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/formaggi_8?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:22+00:00",
+        "checked_at": "2026-09-10T17:36:22+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:22+00:00"
+        "last_seen_at": "2026-09-10T17:36:22+00:00"
       },
       {
         "category": "frutta",
@@ -2781,11 +2781,11 @@
         "variable_weight": 1,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/frutta_277?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:25+00:00",
+        "checked_at": "2026-09-10T17:36:24+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:25+00:00"
+        "last_seen_at": "2026-09-10T17:36:24+00:00"
       },
       {
         "category": "frutta",
@@ -2798,11 +2798,11 @@
         "variable_weight": 1,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/frutta_277?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:25+00:00",
+        "checked_at": "2026-09-10T17:36:24+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:25+00:00"
+        "last_seen_at": "2026-09-10T17:36:24+00:00"
       },
       {
         "category": "frutta",
@@ -2815,11 +2815,11 @@
         "variable_weight": 1,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/frutta_277?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:25+00:00",
+        "checked_at": "2026-09-10T17:36:24+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:25+00:00"
+        "last_seen_at": "2026-09-10T17:36:24+00:00"
       },
       {
         "category": "frutta",
@@ -2832,11 +2832,11 @@
         "variable_weight": 1,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/frutta_277?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:25+00:00",
+        "checked_at": "2026-09-10T17:36:24+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:25+00:00"
+        "last_seen_at": "2026-09-10T17:36:24+00:00"
       },
       {
         "category": "frutta",
@@ -2849,11 +2849,11 @@
         "variable_weight": 1,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/frutta_277?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:25+00:00",
+        "checked_at": "2026-09-10T17:36:24+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:25+00:00"
+        "last_seen_at": "2026-09-10T17:36:24+00:00"
       },
       {
         "category": "dolci_dispensa",
@@ -2866,11 +2866,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dolci_17?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:11+00:00",
+        "checked_at": "2026-09-10T17:36:14+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:11+00:00"
+        "last_seen_at": "2026-09-10T17:36:14+00:00"
       },
       {
         "category": "frutta",
@@ -2883,11 +2883,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/frutta_277?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:25+00:00",
+        "checked_at": "2026-09-10T17:36:24+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:25+00:00"
+        "last_seen_at": "2026-09-10T17:36:24+00:00"
       },
       {
         "category": "frutta",
@@ -2900,11 +2900,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/frutta_277?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:25+00:00",
+        "checked_at": "2026-09-10T17:36:24+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:25+00:00"
+        "last_seen_at": "2026-09-10T17:36:24+00:00"
       }
     ],
     "uova": [
@@ -2919,11 +2919,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/uova_161?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:24+00:00",
+        "checked_at": "2026-09-10T17:36:22+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:24+00:00"
+        "last_seen_at": "2026-09-10T17:36:22+00:00"
       },
       {
         "category": "uova",
@@ -2936,11 +2936,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/uova_161?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:24+00:00",
+        "checked_at": "2026-09-10T17:36:22+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:24+00:00"
+        "last_seen_at": "2026-09-10T17:36:22+00:00"
       },
       {
         "category": "dolci_dispensa",
@@ -2953,11 +2953,11 @@
         "variable_weight": 0,
         "promo_until": "13/09",
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dolci_17?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:11+00:00",
+        "checked_at": "2026-09-10T17:36:14+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": 1.6,
-        "last_seen_at": "2026-09-10T17:18:11+00:00"
+        "last_seen_at": "2026-09-10T17:36:14+00:00"
       },
       {
         "category": "uova",
@@ -2970,11 +2970,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/uova_161?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:24+00:00",
+        "checked_at": "2026-09-10T17:36:22+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:24+00:00"
+        "last_seen_at": "2026-09-10T17:36:22+00:00"
       },
       {
         "category": "uova",
@@ -2987,11 +2987,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/uova_161?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:24+00:00",
+        "checked_at": "2026-09-10T17:36:22+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:24+00:00"
+        "last_seen_at": "2026-09-10T17:36:22+00:00"
       },
       {
         "category": "uova",
@@ -3004,11 +3004,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/uova_161?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:24+00:00",
+        "checked_at": "2026-09-10T17:36:22+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:24+00:00"
+        "last_seen_at": "2026-09-10T17:36:22+00:00"
       },
       {
         "category": "uova",
@@ -3021,11 +3021,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/uova_161?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:24+00:00",
+        "checked_at": "2026-09-10T17:36:22+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:24+00:00"
+        "last_seen_at": "2026-09-10T17:36:22+00:00"
       },
       {
         "category": "dolci_dispensa",
@@ -3038,11 +3038,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dolci_17?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:11+00:00",
+        "checked_at": "2026-09-10T17:36:14+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:11+00:00"
+        "last_seen_at": "2026-09-10T17:36:14+00:00"
       },
       {
         "category": "dolci_dispensa",
@@ -3055,11 +3055,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dolci_17?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:11+00:00",
+        "checked_at": "2026-09-10T17:36:14+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:11+00:00"
+        "last_seen_at": "2026-09-10T17:36:14+00:00"
       },
       {
         "category": "dolci_dispensa",
@@ -3072,11 +3072,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/dolci_17?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:11+00:00",
+        "checked_at": "2026-09-10T17:36:14+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:11+00:00"
+        "last_seen_at": "2026-09-10T17:36:14+00:00"
       },
       {
         "category": "condimenti",
@@ -3089,11 +3089,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/condimenti_351?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:08+00:00",
+        "checked_at": "2026-09-10T17:36:09+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:08+00:00"
+        "last_seen_at": "2026-09-10T17:36:09+00:00"
       },
       {
         "category": "uova",
@@ -3106,11 +3106,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/uova_161?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:24+00:00",
+        "checked_at": "2026-09-10T17:36:22+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:24+00:00"
+        "last_seen_at": "2026-09-10T17:36:22+00:00"
       },
       {
         "category": "uova",
@@ -3123,11 +3123,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/uova_161?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:24+00:00",
+        "checked_at": "2026-09-10T17:36:22+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:24+00:00"
+        "last_seen_at": "2026-09-10T17:36:22+00:00"
       },
       {
         "category": "uova",
@@ -3140,11 +3140,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/uova_161?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:24+00:00",
+        "checked_at": "2026-09-10T17:36:22+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:24+00:00"
+        "last_seen_at": "2026-09-10T17:36:22+00:00"
       },
       {
         "category": "uova",
@@ -3157,11 +3157,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/uova_161?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:24+00:00",
+        "checked_at": "2026-09-10T17:36:22+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:24+00:00"
+        "last_seen_at": "2026-09-10T17:36:22+00:00"
       },
       {
         "category": "uova",
@@ -3174,11 +3174,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/uova_161?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:24+00:00",
+        "checked_at": "2026-09-10T17:36:22+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:24+00:00"
+        "last_seen_at": "2026-09-10T17:36:22+00:00"
       },
       {
         "category": "uova",
@@ -3191,11 +3191,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/uova_161?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:24+00:00",
+        "checked_at": "2026-09-10T17:36:22+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:24+00:00"
+        "last_seen_at": "2026-09-10T17:36:22+00:00"
       },
       {
         "category": "uova",
@@ -3208,11 +3208,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/uova_161?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:24+00:00",
+        "checked_at": "2026-09-10T17:36:22+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:24+00:00"
+        "last_seen_at": "2026-09-10T17:36:22+00:00"
       },
       {
         "category": "uova",
@@ -3225,11 +3225,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/uova_161?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:24+00:00",
+        "checked_at": "2026-09-10T17:36:22+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:24+00:00"
+        "last_seen_at": "2026-09-10T17:36:22+00:00"
       },
       {
         "category": "uova",
@@ -3242,11 +3242,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/uova_161?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:24+00:00",
+        "checked_at": "2026-09-10T17:36:22+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:24+00:00"
+        "last_seen_at": "2026-09-10T17:36:22+00:00"
       }
     ],
     "salsiccia": [
@@ -3261,11 +3261,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/carne_5?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:19+00:00",
+        "checked_at": "2026-09-10T17:36:19+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:19+00:00"
+        "last_seen_at": "2026-09-10T17:36:19+00:00"
       },
       {
         "category": "carne",
@@ -3278,11 +3278,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/carne_5?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:19+00:00",
+        "checked_at": "2026-09-10T17:36:19+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:19+00:00"
+        "last_seen_at": "2026-09-10T17:36:19+00:00"
       },
       {
         "category": "carne",
@@ -3295,11 +3295,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/carne_5?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:19+00:00",
+        "checked_at": "2026-09-10T17:36:19+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:19+00:00"
+        "last_seen_at": "2026-09-10T17:36:19+00:00"
       },
       {
         "category": "carne",
@@ -3312,11 +3312,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/carne_5?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:19+00:00",
+        "checked_at": "2026-09-10T17:36:19+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:19+00:00"
+        "last_seen_at": "2026-09-10T17:36:19+00:00"
       },
       {
         "category": "sughi",
@@ -3329,11 +3329,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/sughi_350?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:09+00:00",
+        "checked_at": "2026-09-10T17:36:11+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:09+00:00"
+        "last_seen_at": "2026-09-10T17:36:11+00:00"
       },
       {
         "category": "salumi",
@@ -3346,11 +3346,11 @@
         "variable_weight": 1,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/salumi_9?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:28+00:00",
+        "checked_at": "2026-09-10T17:36:25+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:28+00:00"
+        "last_seen_at": "2026-09-10T17:36:25+00:00"
       },
       {
         "category": "carne",
@@ -3363,11 +3363,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/carne_5?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:19+00:00",
+        "checked_at": "2026-09-10T17:36:19+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:19+00:00"
+        "last_seen_at": "2026-09-10T17:36:19+00:00"
       },
       {
         "category": "salumi",
@@ -3380,11 +3380,11 @@
         "variable_weight": 1,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/salumi_9?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:28+00:00",
+        "checked_at": "2026-09-10T17:36:25+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:28+00:00"
+        "last_seen_at": "2026-09-10T17:36:25+00:00"
       },
       {
         "category": "salumi",
@@ -3397,11 +3397,11 @@
         "variable_weight": 1,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/salumi_9?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:28+00:00",
+        "checked_at": "2026-09-10T17:36:25+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:28+00:00"
+        "last_seen_at": "2026-09-10T17:36:25+00:00"
       },
       {
         "category": "pasta_pane_farinacei",
@@ -3414,11 +3414,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/pasta-pane-e-farinacei_12?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:06+00:00",
+        "checked_at": "2026-09-10T17:36:08+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:06+00:00"
+        "last_seen_at": "2026-09-10T17:36:08+00:00"
       },
       {
         "category": "carne",
@@ -3431,11 +3431,11 @@
         "variable_weight": 1,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/carne_5?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:19+00:00",
+        "checked_at": "2026-09-10T17:36:19+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:19+00:00"
+        "last_seen_at": "2026-09-10T17:36:19+00:00"
       },
       {
         "category": "carne",
@@ -3448,11 +3448,11 @@
         "variable_weight": 1,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/carne_5?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:19+00:00",
+        "checked_at": "2026-09-10T17:36:19+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:19+00:00"
+        "last_seen_at": "2026-09-10T17:36:19+00:00"
       },
       {
         "category": "carne",
@@ -3465,11 +3465,11 @@
         "variable_weight": 1,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/carne_5?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:19+00:00",
+        "checked_at": "2026-09-10T17:36:19+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:19+00:00"
+        "last_seen_at": "2026-09-10T17:36:19+00:00"
       },
       {
         "category": "carne",
@@ -3482,11 +3482,11 @@
         "variable_weight": 1,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/carne_5?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:19+00:00",
+        "checked_at": "2026-09-10T17:36:19+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:19+00:00"
+        "last_seen_at": "2026-09-10T17:36:19+00:00"
       },
       {
         "category": "carne",
@@ -3499,11 +3499,11 @@
         "variable_weight": 1,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/carne_5?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:19+00:00",
+        "checked_at": "2026-09-10T17:36:19+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:19+00:00"
+        "last_seen_at": "2026-09-10T17:36:19+00:00"
       },
       {
         "category": "carne",
@@ -3516,11 +3516,11 @@
         "variable_weight": 1,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/carne_5?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:19+00:00",
+        "checked_at": "2026-09-10T17:36:19+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:19+00:00"
+        "last_seen_at": "2026-09-10T17:36:19+00:00"
       },
       {
         "category": "salumi",
@@ -3533,11 +3533,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/salumi_9?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:28+00:00",
+        "checked_at": "2026-09-10T17:36:25+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:28+00:00"
+        "last_seen_at": "2026-09-10T17:36:25+00:00"
       },
       {
         "category": "carne",
@@ -3550,11 +3550,11 @@
         "variable_weight": 0,
         "promo_until": null,
         "source_url": "https://www.piccolospesaonline.it/spesa-consegna-domicilio/8004C/carne_5?d=1&s=g&sort=price",
-        "checked_at": "2026-09-10T17:18:19+00:00",
+        "checked_at": "2026-09-10T17:36:19+00:00",
         "audit_status": "VALID",
         "audit_reason": null,
         "previous_lowest_price_eur": null,
-        "last_seen_at": "2026-09-10T17:18:19+00:00"
+        "last_seen_at": "2026-09-10T17:36:19+00:00"
       }
     ]
   }
