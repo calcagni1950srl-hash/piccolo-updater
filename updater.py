@@ -53,8 +53,11 @@ class Product:
     unit_price_eur: float | None
     unit_price_unit: str | None
     list_price_eur: float | None
+    previous_lowest_price_eur: float | None
     discount_pct: float | None
     variable_weight: int
+    audit_status: str
+    audit_reason: str | None
     promo_until: str | None
     source_url: str
     checked_at: str
@@ -235,6 +238,48 @@ def promo_until(text: str):
     return m.group(1) if m else None
 
 
+def _has_previous_lowest_label(text: str) -> bool:
+    """Piccolo may expose the legally required previous 30-day lowest price."""
+    return bool(
+        re.search(
+            r"prezzo\s+(?:pi[uù]\s+basso\s+)?precedente|ultimi\s+30\s+giorni",
+            text,
+            re.I,
+        )
+    )
+
+
+def certify_product(
+    *,
+    name: str,
+    price: float,
+    qv: float | None,
+    qu: str | None,
+    unit_price_value: float | None,
+    unit_price_unit: str | None,
+    variable_weight: int,
+) -> tuple[str, str | None]:
+    """Classify whether a row is safe for the real-shopping engine."""
+    if price <= 0 or price > 500:
+        return "REJECTED", "PREZZO_NON_VALIDO"
+
+    if variable_weight:
+        uu = (unit_price_unit or "").lower()
+        if unit_price_value is None or unit_price_value <= 0:
+            return "REVIEW", "PESO_VARIABILE_SENZA_PREZZO_UNITARIO"
+        if uu not in {"kg", "litro", "l", "lt"}:
+            return "REVIEW", "PESO_VARIABILE_UNITA_PREZZO_NON_GESTITA"
+        return "VALID", None
+
+    if qv is None or qu is None or qv <= 0:
+        return "REVIEW", "CONFEZIONE_SENZA_QUANTITA"
+
+    if qu.lower() not in {"kg", "gr", "g", "ml", "cl", "lt", "l", "pz"}:
+        return "REVIEW", "UNITA_CONFEZIONE_NON_GESTITA"
+
+    return "VALID", None
+
+
 def parse_product_block(name: str, text: str, category: str, source_url: str) -> Product | None:
     # Work only on the single product card. Remove title once so numbers in
     # product names (e.g. "0,204 kg") don't confuse quantity/price matching.
@@ -250,7 +295,13 @@ def parse_product_block(name: str, text: str, category: str, source_url: str) ->
     # "Aggiungi". If a promotion is active, the previous/list price is the
     # preceding non-unit price.
     price = prices[-1]
-    list_price = prices[-2] if len(prices) >= 2 and prices[-2] > price else None
+    reference_price = prices[-2] if len(prices) >= 2 and prices[-2] > price else None
+    if reference_price is not None and _has_previous_lowest_label(text):
+        previous_lowest_price = reference_price
+        list_price = None
+    else:
+        previous_lowest_price = None
+        list_price = reference_price
 
     # Safety checks.
     if price <= 0 or price > 500:
@@ -299,6 +350,16 @@ def parse_product_block(name: str, text: str, category: str, source_url: str) ->
     if list_price and list_price > price:
         discount = round((1 - price / list_price) * 100, 1)
 
+    audit_status, audit_reason = certify_product(
+        name=name,
+        price=price,
+        qv=qv,
+        qu=qu,
+        unit_price_value=up,
+        unit_price_unit=uu,
+        variable_weight=is_variable,
+    )
+
     return Product(
         supermarket="Piccolo",
         store_code=STORE_CODE,
@@ -310,8 +371,11 @@ def parse_product_block(name: str, text: str, category: str, source_url: str) ->
         unit_price_eur=up,
         unit_price_unit=uu,
         list_price_eur=list_price,
+        previous_lowest_price_eur=previous_lowest_price,
         discount_pct=discount,
         variable_weight=is_variable,
+        audit_status=audit_status,
+        audit_reason=audit_reason,
         promo_until=promo_until(text),
         source_url=source_url,
         checked_at=datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -423,9 +487,13 @@ def init_db(conn: sqlite3.Connection):
             unit_price_eur REAL,
             unit_price_unit TEXT,
             list_price_eur REAL,
+            previous_lowest_price_eur REAL,
             discount_pct REAL,
             variable_weight INTEGER NOT NULL DEFAULT 0,
             promo_until TEXT,
+            audit_status TEXT NOT NULL DEFAULT 'REVIEW',
+            audit_reason TEXT,
+            last_seen_at TEXT,
             source_url TEXT NOT NULL,
             checked_at TEXT NOT NULL,
             PRIMARY KEY (supermarket, store_code, category, name)
@@ -450,12 +518,39 @@ def init_db(conn: sqlite3.Connection):
             products_found INTEGER NOT NULL,
             message TEXT
         );
+
+        CREATE TABLE IF NOT EXISTS products_archive (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            supermarket TEXT NOT NULL,
+            store_code TEXT NOT NULL,
+            category TEXT NOT NULL,
+            name TEXT NOT NULL,
+            removed_at TEXT NOT NULL,
+            last_price_eur REAL,
+            source_url TEXT,
+            reason TEXT NOT NULL
+        );
         """
     )
 
     # Automatic migration for the prezzi.db already created by v1.
     _ensure_column(conn, "products_current", "list_price_eur", "REAL")
+    _ensure_column(conn, "products_current", "previous_lowest_price_eur", "REAL")
     _ensure_column(conn, "products_current", "discount_pct", "REAL")
+    _ensure_column(conn, "products_current", "audit_status", "TEXT NOT NULL DEFAULT 'REVIEW'")
+    _ensure_column(conn, "products_current", "audit_reason", "TEXT")
+    _ensure_column(conn, "products_current", "last_seen_at", "TEXT")
+
+    conn.execute("DROP VIEW IF EXISTS products_certified")
+    conn.execute(
+        """
+        CREATE VIEW products_certified AS
+        SELECT *
+        FROM products_current
+        WHERE audit_status='VALID'
+          AND price_eur > 0
+        """
+    )
     conn.commit()
 
 
@@ -507,8 +602,7 @@ def save_category(conn: sqlite3.Connection, category: str, products: Iterable[Pr
         ("Piccolo", STORE_CODE, category),
     ).fetchone()[0]
 
-    # Guardrail: do not replace/update a category if extraction suddenly
-    # collapses. This protects the previous good dataset.
+    # Guardrail: never prune the previous snapshot when extraction collapses.
     if old_count >= 10 and len(products) < max(3, int(old_count * 0.30)):
         raise RuntimeError(
             f"estrazione anomala: {len(products)} prodotti validi contro {old_count} precedenti"
@@ -516,7 +610,49 @@ def save_category(conn: sqlite3.Connection, category: str, products: Iterable[Pr
     if len(products) < 1:
         raise RuntimeError("nessun prodotto valido estratto")
 
+    now = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    incoming_names = {p.name for p in products}
+
     with conn:
+        # Snapshot semantics: after a successful full category extraction,
+        # rows no longer present are archived and removed from products_current.
+        stale_rows = conn.execute(
+            """
+            SELECT name, price_eur, source_url
+            FROM products_current
+            WHERE supermarket=? AND store_code=? AND category=?
+            """,
+            ("Piccolo", STORE_CODE, category),
+        ).fetchall()
+
+        for old_name, old_price, old_url in stale_rows:
+            if old_name in incoming_names:
+                continue
+            conn.execute(
+                """
+                INSERT INTO products_archive
+                (supermarket,store_code,category,name,removed_at,last_price_eur,source_url,reason)
+                VALUES (?,?,?,?,?,?,?,?)
+                """,
+                (
+                    "Piccolo",
+                    STORE_CODE,
+                    category,
+                    old_name,
+                    now,
+                    old_price,
+                    old_url,
+                    "NON_PIU_PRESENTE_NELLO_SNAPSHOT_CATEGORIA",
+                ),
+            )
+            conn.execute(
+                """
+                DELETE FROM products_current
+                WHERE supermarket=? AND store_code=? AND category=? AND name=?
+                """,
+                ("Piccolo", STORE_CODE, category, old_name),
+            )
+
         for p in products:
             previous = conn.execute(
                 """
@@ -551,10 +687,12 @@ def save_category(conn: sqlite3.Connection, category: str, products: Iterable[Pr
                     supermarket,store_code,category,name,
                     quantity_value,quantity_unit,
                     price_eur,unit_price_eur,unit_price_unit,
-                    list_price_eur,discount_pct,
-                    variable_weight,promo_until,source_url,checked_at
+                    list_price_eur,previous_lowest_price_eur,discount_pct,
+                    variable_weight,promo_until,
+                    audit_status,audit_reason,last_seen_at,
+                    source_url,checked_at
                 )
-                VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+                VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
                 ON CONFLICT(supermarket,store_code,category,name) DO UPDATE SET
                     quantity_value=excluded.quantity_value,
                     quantity_unit=excluded.quantity_unit,
@@ -562,9 +700,13 @@ def save_category(conn: sqlite3.Connection, category: str, products: Iterable[Pr
                     unit_price_eur=excluded.unit_price_eur,
                     unit_price_unit=excluded.unit_price_unit,
                     list_price_eur=excluded.list_price_eur,
+                    previous_lowest_price_eur=excluded.previous_lowest_price_eur,
                     discount_pct=excluded.discount_pct,
                     variable_weight=excluded.variable_weight,
                     promo_until=excluded.promo_until,
+                    audit_status=excluded.audit_status,
+                    audit_reason=excluded.audit_reason,
+                    last_seen_at=excluded.last_seen_at,
                     source_url=excluded.source_url,
                     checked_at=excluded.checked_at
                 """,
@@ -579,9 +721,13 @@ def save_category(conn: sqlite3.Connection, category: str, products: Iterable[Pr
                     p.unit_price_eur,
                     p.unit_price_unit,
                     p.list_price_eur,
+                    p.previous_lowest_price_eur,
                     p.discount_pct,
                     p.variable_weight,
                     p.promo_until,
+                    p.audit_status,
+                    p.audit_reason,
+                    p.checked_at,
                     p.source_url,
                     p.checked_at,
                 ),
@@ -601,8 +747,11 @@ def run():
             products = parse_html(html, category, url)
             save_category(conn, category, products)
 
-            valid_count = len([p for p in products if _product_is_sane(p)])
-            total += valid_count
+            sane_products = [p for p in products if _product_is_sane(p)]
+            valid_count = len(sane_products)
+            certified_count = len([p for p in sane_products if p.audit_status == "VALID"])
+            review_count = len([p for p in sane_products if p.audit_status == "REVIEW"])
+            total += certified_count
 
             conn.execute(
                 """
@@ -615,11 +764,14 @@ def run():
                     category,
                     "OK",
                     valid_count,
-                    None,
+                    f"certificati={certified_count}; review={review_count}",
                 ),
             )
             conn.commit()
-            print(f"[OK] {category}: {valid_count} prodotti validi")
+            print(
+                f"[OK] {category}: estratti={valid_count}; "
+                f"certificati={certified_count}; review={review_count}"
+            )
 
         except Exception as exc:
             failures += 1
@@ -641,7 +793,7 @@ def run():
             print(f"[ERRORE] {category}: {exc}", file=sys.stderr)
 
     conn.close()
-    print(f"Totale prodotti validi estratti: {total}; categorie fallite: {failures}")
+    print(f"Totale prodotti certificati: {total}; categorie fallite: {failures}")
 
     if failures:
         sys.exit(2)

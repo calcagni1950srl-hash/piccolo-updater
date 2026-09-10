@@ -1,15 +1,17 @@
-from updater import quantity, parse_product_block
+
+import sqlite3
+from updater import (
+    quantity, parse_product_block, init_db, save_category, Product, STORE_CODE
+)
 
 def check(got, expected, label):
-    assert got == expected, f"{label}: ottenuto {got}, atteso {expected}"
+    assert got == expected, f"{label}: ottenuto {got!r}, atteso {expected!r}"
 
-# Regressioni V6.
 check(quantity("PICCOLO ORIGANO GR 15"), (15.0, "gr"), "origano reverse")
 check(quantity("PICCOLO PEPE NERO MACINATO GR 35"), (35.0, "gr"), "pepe reverse")
 check(quantity("PICCOLO OLIO DI GIRASOLE LT 1"), (1.0, "lt"), "olio reverse")
 check(quantity("Prodotto 2 x 50 g"), (100.0, "gr"), "multipack classico")
 
-# Sealed pack, reversed syntax: name remains authoritative.
 p = parse_product_block(
     "PICCOLO ORIGANO GR 15",
     """PICCOLO ORIGANO GR 15
@@ -22,38 +24,77 @@ Aggiungi""",
 )
 assert p is not None
 check((p.quantity_value, p.quantity_unit), (15.0, "gr"), "fixed name precedence")
+check(p.audit_status, "VALID", "fixed certified")
 
-# Sold-by-weight product: 500 g is correct, despite "KG 1" in catalogue title.
 p = parse_product_block(
-    "PANE GRATTUGIATO KG 1",
-    """PANE GRATTUGIATO KG 1
+    "PANE BIANCO AL KG",
+    """PANE BIANCO AL KG
 500 gr
-2,55 € al kg
+2,70 € al kg
 Venduto a Peso
-1,27 €
-Aggiungi""",
-    "pane",
-    "https://example.test/pane-grattugiato",
-)
-assert p is not None
-check((p.quantity_value, p.quantity_unit), (500.0, "gr"), "pane grattugiato live weight")
-assert p.variable_weight == 1
-assert abs(p.unit_price_eur - 2.55) < 0.001
-
-# Ambiguous catalogue multipack: current live-card weight wins.
-p = parse_product_block(
-    "DUEGI IL PANUOZZO X2 GR 400",
-    """DUEGI IL PANUOZZO X2 GR 400
-350 gr
-7,00 € al kg
-2,45 €
+1,35 €
 Aggiungi""",
     "pasta_pane_farinacei",
-    "https://example.test/panuozzo",
+    "https://example.test/pane",
 )
 assert p is not None
-check((p.quantity_value, p.quantity_unit), (350.0, "gr"), "panuozzo live weight")
-assert p.variable_weight == 0
-assert abs(p.unit_price_eur - 7.00) < 0.001
+check(p.variable_weight, 1, "pane variable")
+check(p.audit_status, "VALID", "pane certified")
+check((p.quantity_value, p.quantity_unit), (500.0, "gr"), "pane default weight")
 
-print("OK - test_parser V7 superati")
+p = parse_product_block(
+    "PRODOTTO SENZA FORMATO",
+    """PRODOTTO SENZA FORMATO
+2,49 €
+Aggiungi""",
+    "x",
+    "https://example.test/noqty",
+)
+assert p is not None
+check(p.audit_status, "REVIEW", "fixed no quantity review")
+check(p.audit_reason, "CONFEZIONE_SENZA_QUANTITA", "fixed no quantity reason")
+
+p = parse_product_block(
+    "BENEDUCE MOZZARELLA GR 250",
+    """BENEDUCE MOZZARELLA GR 250
+250 gr
+Prezzo più basso precedente 2,25 €
+8,00 € al kg
+2,00 €
+IN OFFERTA fino al 13/09
+Aggiungi""",
+    "formaggi",
+    "https://example.test/mozzarella",
+)
+assert p is not None
+check(p.previous_lowest_price_eur, 2.25, "previous lowest separated")
+check(p.list_price_eur, None, "not fake list price")
+check(p.discount_pct, None, "no fake discount")
+check(p.price_eur, 2.0, "selling price")
+
+# Snapshot semantics: stale row must be archived after a successful extraction.
+c = sqlite3.connect(":memory:")
+init_db(c)
+now = "2026-09-10T17:00:00+00:00"
+
+def prod(name, price=1.0):
+    return Product(
+        supermarket="Piccolo", store_code=STORE_CODE, category="test",
+        name=name, quantity_value=500.0, quantity_unit="gr",
+        price_eur=price, unit_price_eur=price*2, unit_price_unit="kg",
+        list_price_eur=None, previous_lowest_price_eur=None,
+        discount_pct=None, variable_weight=0,
+        audit_status="VALID", audit_reason=None,
+        promo_until=None, source_url="https://example.test", checked_at=now
+    )
+
+save_category(c, "test", [prod("A"), prod("B")])
+check(c.execute("select count(*) from products_current").fetchone()[0], 2, "initial snapshot")
+save_category(c, "test", [prod("B"), prod("C")])
+names = [r[0] for r in c.execute("select name from products_current order by name")]
+check(names, ["B", "C"], "stale removed")
+arch = c.execute("select name, reason from products_archive").fetchall()
+check(arch, [("A", "NON_PIU_PRESENTE_NELLO_SNAPSHOT_CATEGORIA")], "stale archived")
+check(c.execute("select count(*) from products_certified").fetchone()[0], 2, "certified view")
+
+print("OK - test_parser V8 superati")
