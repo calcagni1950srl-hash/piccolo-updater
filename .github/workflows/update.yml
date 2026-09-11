@@ -2,9 +2,6 @@ name: Aggiorna prezzi Piccolo
 
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - "patch_multipack.py"
   schedule:
     - cron: "30 4 * * *"
     - cron: "30 5 * * *"
@@ -26,7 +23,7 @@ jobs:
           from zoneinfo import ZoneInfo
 
           event = os.environ.get("GITHUB_EVENT_NAME", "")
-          should_run = event in {"workflow_dispatch", "push"}
+          should_run = event == "workflow_dispatch"
 
           if event == "schedule":
               now_rome = datetime.now(ZoneInfo("Europe/Rome"))
@@ -47,11 +44,6 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Applica patch multipack temporanea
-        if: steps.gate.outputs.should_run == 'true'
-        run: |
-          if [ -f patch_multipack.py ]; then python patch_multipack.py; fi
-
       - name: Installa dipendenze
         if: steps.gate.outputs.should_run == 'true'
         run: pip install -r requirements.txt
@@ -68,11 +60,11 @@ jobs:
         if: steps.gate.outputs.should_run == 'true'
         run: python audit_db.py
 
-      - name: Salva V8 database e audit
+      - name: Salva database e audit
         if: steps.gate.outputs.should_run == 'true'
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add updater.py test_parser.py audit_db.py prezzi.db audit_piccolo.json
-          git diff --cached --quiet || git commit -m "Corregge multipack Piccolo V8 e aggiorna audit"
+          git add prezzi.db audit_piccolo.json
+          git diff --cached --quiet || git commit -m "Aggiorna prezzi Piccolo e audit"
           git push
