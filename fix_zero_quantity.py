@@ -1,5 +1,6 @@
 from pathlib import Path
 
+# Trigger finale: corregge il falso match "00 KG" prima di "KG 1".
 UPDATER = Path("updater.py")
 TESTS = Path("test_parser.py")
 
