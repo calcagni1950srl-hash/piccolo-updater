@@ -750,6 +750,45 @@ def save_category(conn: sqlite3.Connection, category: str, products: Iterable[Pr
             )
 
 
+LEGACY_CATEGORIES = {"verdura", "legumi", "pane", "pasta"}
+
+def cleanup_legacy_categories(conn: sqlite3.Connection) -> int:
+    now = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    placeholders = ",".join("?" for _ in LEGACY_CATEGORIES)
+    params = ["Piccolo", STORE_CODE, *sorted(LEGACY_CATEGORIES)]
+    rows = conn.execute(
+        f"""
+        SELECT category,name,price_eur,source_url
+        FROM products_current
+        WHERE supermarket=? AND store_code=?
+          AND category IN ({placeholders})
+        """,
+        params,
+    ).fetchall()
+    if not rows:
+        return 0
+    with conn:
+        for category, name, price, source_url in rows:
+            conn.execute(
+                """
+                INSERT INTO products_archive
+                (supermarket,store_code,category,name,removed_at,last_price_eur,source_url,reason)
+                VALUES (?,?,?,?,?,?,?,?)
+                """,
+                ("Piccolo", STORE_CODE, category, name, now, price, source_url,
+                 "CATEGORIA_LEGACY_SOSTITUITA"),
+            )
+        conn.execute(
+            f"""
+            DELETE FROM products_current
+            WHERE supermarket=? AND store_code=?
+              AND category IN ({placeholders})
+            """,
+            params,
+        )
+    return len(rows)
+
+
 def run():
     conn = sqlite3.connect(DB_PATH)
     init_db(conn)
@@ -807,6 +846,10 @@ def run():
             )
             conn.commit()
             print(f"[ERRORE] {category}: {exc}", file=sys.stderr)
+
+    if failures == 0:
+        removed_legacy = cleanup_legacy_categories(conn)
+        print(f"Categorie legacy archiviate/rimosse: {removed_legacy}")
 
     conn.close()
     print(f"Totale prodotti certificati: {total}; categorie fallite: {failures}")
