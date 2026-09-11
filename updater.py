@@ -123,7 +123,11 @@ def quantity(text: str):
             unit = "gr"
         elif unit == "l":
             unit = "lt"
-        return value, unit
+        # Evita falsi positivi nei nomi come "FARINA TIPO 00 KG 1":
+        # "00 KG" non è una confezione, quindi lasciamo proseguire la ricerca
+        # fino alla forma inversa corretta "KG 1".
+        if value > 0:
+            return value, unit
 
     # Piccolo names often use reversed order: "ORIGANO GR 15", "OLIO LT 1".
     m = re.search(

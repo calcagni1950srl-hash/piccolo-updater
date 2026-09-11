@@ -102,3 +102,6 @@ print("OK - test_parser V8 superati")
 # Regressione multipack Piccolo: ordine UNITA QUANTITA X PEZZI
 assert quantity("MARRANDINO MOZZARELLA BUFALA GR 100 X 5") == (500.0, "gr")
 assert quantity("LA PERLA MOZZARELLA DI BUFALA GR 125 X 2") == (250.0, "gr")
+
+# Regressione: "TIPO 00 KG 1" deve ignorare lo 00 e leggere KG 1.
+assert quantity("PICCOLO FARINA TIPO 00 KG 1") == (1.0, "kg")
