@@ -2,11 +2,6 @@ name: Aggiorna prezzi Piccolo
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - ".github/refresh_piccolo.txt"
   schedule:
     - cron: "30 4 * * *"
     - cron: "30 5 * * *"
@@ -28,7 +23,7 @@ jobs:
           from zoneinfo import ZoneInfo
 
           event = os.environ.get("GITHUB_EVENT_NAME", "")
-          should_run = event in {"workflow_dispatch", "push"}
+          should_run = event == "workflow_dispatch"
 
           if event == "schedule":
               now_rome = datetime.now(ZoneInfo("Europe/Rome"))
