@@ -56,6 +56,10 @@ jobs:
         if: steps.gate.outputs.should_run == 'true'
         run: python updater.py
 
+      - name: Aggiorna categorie extra ricette
+        if: steps.gate.outputs.should_run == 'true'
+        run: python updater_extra.py
+
       - name: Ricertifica snapshot
         if: steps.gate.outputs.should_run == 'true'
         run: python recertify_db.py
