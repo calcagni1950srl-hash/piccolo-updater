@@ -5,7 +5,7 @@ from updater import certify_product
 
 DB_PATH = Path(__file__).with_name("prezzi.db")
 
-
+# Mantiene audit_status/audit_reason coerenti con i campi correnti del prodotto.
 def main():
     conn = sqlite3.connect(DB_PATH)
     rows = conn.execute(
