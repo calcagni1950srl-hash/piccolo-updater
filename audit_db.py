@@ -47,32 +47,18 @@ def main():
     if has_last_seen:
         select_cols += ["last_seen_at"]
 
-    rows = rows_as_dicts(
-        conn.execute(f"SELECT {', '.join(select_cols)} FROM products_current")
-    )
+    rows = rows_as_dicts(conn.execute(f"SELECT {', '.join(select_cols)} FROM products_current"))
 
-    status_counter = Counter(
-        (r.get("audit_status") or "LEGACY") for r in rows
-    )
-    reason_counter = Counter(
-        r.get("audit_reason") for r in rows if r.get("audit_reason")
-    )
+    status_counter = Counter((r.get("audit_status") or "LEGACY") for r in rows)
+    reason_counter = Counter(r.get("audit_reason") for r in rows if r.get("audit_reason"))
     category_counter = Counter(r["category"] for r in rows)
 
-    missing_qty = [
-        r for r in rows
-        if not r["variable_weight"]
-        and (r["quantity_value"] is None or r["quantity_unit"] is None)
-    ]
-    variable_without_unit_price = [
-        r for r in rows
-        if r["variable_weight"]
-        and (r["unit_price_eur"] is None or not r["unit_price_unit"])
-    ]
-    bad_price = [
-        r for r in rows
-        if r["price_eur"] is None or r["price_eur"] <= 0 or r["price_eur"] > 500
-    ]
+    review_rows = [r for r in rows if (r.get("audit_status") or "").upper() == "REVIEW"]
+    rejected_rows = [r for r in rows if (r.get("audit_status") or "").upper() == "REJECTED"]
+
+    missing_qty = [r for r in rows if not r["variable_weight"] and (r["quantity_value"] is None or r["quantity_unit"] is None)]
+    variable_without_unit_price = [r for r in rows if r["variable_weight"] and (r["unit_price_eur"] is None or not r["unit_price_unit"])]
+    bad_price = [r for r in rows if r["price_eur"] is None or r["price_eur"] <= 0 or r["price_eur"] > 500]
 
     target_samples = {}
     for label, needles in TARGETS.items():
@@ -91,6 +77,8 @@ def main():
         "by_category": dict(sorted(category_counter.items())),
         "audit_status_counts": dict(sorted(status_counter.items())),
         "audit_reason_counts": dict(sorted(reason_counter.items())),
+        "review_rows": review_rows[:100],
+        "rejected_rows": rejected_rows[:100],
         "anomalies": {
             "fixed_pack_missing_quantity_count": len(missing_qty),
             "variable_weight_missing_unit_price_count": len(variable_without_unit_price),
@@ -102,14 +90,14 @@ def main():
         "priority_samples": target_samples,
     }
 
-    OUT_PATH.write_text(
-        json.dumps(report, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
+    OUT_PATH.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
 
     print(f"Audit scritto in {OUT_PATH.name}")
     print(f"Righe correnti: {len(rows)}")
     print(f"Stati: {dict(status_counter)}")
+    print(f"REVIEW: {len(review_rows)}")
+    for r in review_rows[:20]:
+        print(f"[REVIEW] {r['category']} | {r['name']} | motivo={r.get('audit_reason')}")
     print(f"Confezioni fisse senza quantità: {len(missing_qty)}")
     print(f"Peso variabile senza prezzo unitario: {len(variable_without_unit_price)}")
     print(f"Prezzi non validi: {len(bad_price)}")
