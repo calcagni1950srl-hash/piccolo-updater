@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - "recertify_db.py"
+      - "fix_zero_quantity.py"
   schedule:
     - cron: "30 4 * * *"
     - cron: "30 5 * * *"
@@ -47,6 +47,10 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Applica fix quantità zero
+        if: steps.gate.outputs.should_run == 'true'
+        run: python fix_zero_quantity.py
+
       - name: Installa dipendenze
         if: steps.gate.outputs.should_run == 'true'
         run: pip install -r requirements.txt
@@ -72,6 +76,6 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add prezzi.db audit_piccolo.json
-          git diff --cached --quiet || git commit -m "Aggiorna prezzi Piccolo e audit"
+          git add updater.py test_parser.py prezzi.db audit_piccolo.json
+          git diff --cached --quiet || git commit -m "Corregge quantità zero e aggiorna Piccolo"
           git push
