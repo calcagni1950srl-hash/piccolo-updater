@@ -1,5 +1,6 @@
 from pathlib import Path
 
+# Trigger audit finale V8.1 dopo pulizia categorie legacy.
 UPDATER = Path('updater.py')
 TESTS = Path('test_parser.py')
 
@@ -13,10 +14,6 @@ if 'Reversed multipack used by Piccolo catalogue names' not in src:
         raise SystemExit('Marker quantity() non trovato: patch interrotta')
     src = src.replace(marker, patch + marker, 1)
 
-# V8.1: elimina soltanto le vecchie categorie sostituite dalle macro-categorie.
-# La pulizia viene chiamata esclusivamente quando TUTTE le categorie correnti
-# sono state aggiornate senza errori, quindi un problema di rete/parser non
-# può cancellare il vecchio snapshot.
 legacy_code = '''\nLEGACY_CATEGORIES = {"verdura", "legumi", "pane", "pasta"}\n\ndef cleanup_legacy_categories(conn: sqlite3.Connection) -> int:\n    now = datetime.now(timezone.utc).isoformat(timespec="seconds")\n    placeholders = ",".join("?" for _ in LEGACY_CATEGORIES)\n    params = ["Piccolo", STORE_CODE, *sorted(LEGACY_CATEGORIES)]\n    rows = conn.execute(\n        f"""\n        SELECT category,name,price_eur,source_url\n        FROM products_current\n        WHERE supermarket=? AND store_code=?\n          AND category IN ({placeholders})\n        """,\n        params,\n    ).fetchall()\n    if not rows:\n        return 0\n    with conn:\n        for category, name, price, source_url in rows:\n            conn.execute(\n                """\n                INSERT INTO products_archive\n                (supermarket,store_code,category,name,removed_at,last_price_eur,source_url,reason)\n                VALUES (?,?,?,?,?,?,?,?)\n                """,\n                ("Piccolo", STORE_CODE, category, name, now, price, source_url,\n                 "CATEGORIA_LEGACY_SOSTITUITA"),\n            )\n        conn.execute(\n            f"""\n            DELETE FROM products_current\n            WHERE supermarket=? AND store_code=?\n              AND category IN ({placeholders})\n            """,\n            params,\n        )\n    return len(rows)\n\n'''
 run_marker = '\ndef run():\n'
 if 'def cleanup_legacy_categories(' not in src:
@@ -33,7 +30,6 @@ if 'removed_legacy = cleanup_legacy_categories(conn)' not in src:
 
 UPDATER.write_text(src, encoding='utf-8')
 
-# Test regressione multipack.
 t = TESTS.read_text(encoding='utf-8')
 reg = '''\n# Regressione multipack Piccolo: ordine UNITA QUANTITA X PEZZI\nassert quantity("MARRANDINO MOZZARELLA BUFALA GR 100 X 5") == (500.0, "gr")\nassert quantity("LA PERLA MOZZARELLA DI BUFALA GR 125 X 2") == (250.0, "gr")\n'''
 if 'MARRANDINO MOZZARELLA BUFALA GR 100 X 5' not in t:
