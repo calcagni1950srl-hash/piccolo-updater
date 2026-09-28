@@ -33,6 +33,10 @@ CATEGORIES = {
     "olio": f"{BASE}/spesa-consegna-domicilio/{STORE_CODE}/olio_349?d=1&s=g&sort=price",
     "pesce_surgelato": f"{BASE}/spesa-consegna-domicilio/{STORE_CODE}/pesce-surgelato_253?d=1&s=g&sort=price",
     "pesce_scatola": f"{BASE}/spesa-consegna-domicilio/{STORE_CODE}/tonno-e-pesce-in-scatola_209?d=1&s=g&sort=price",
+
+    # Categorie necessarie al confronto spesa generale.
+    "acqua": f"{BASE}/spesa-consegna-domicilio/{STORE_CODE}/acqua_343?d=1&s=g&sort=price",
+    "carta_igienica": f"{BASE}/spesa-consegna-domicilio/{STORE_CODE}/carta-igienica_58?d=1&s=g&sort=price",
 }
 
 HEADERS = {
